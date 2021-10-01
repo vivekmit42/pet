@@ -9,5 +9,5 @@ RUN \
   apt-get install openjdk-11-jre -y
 
 RUN update-alternatives --display java
-COPY spring-petclinic-2.5.0-SNAPSHOT.jar /home/spring-petclinic-2.5.0-SNAPSHOT.jar
+COPY /var/lib/jenkins/jobs/petclinic/spring-petclinic-2.5.0-SNAPSHOT.jar /home/spring-petclinic-2.5.0-SNAPSHOT.jar
 CMD java -jar /home/spring-petclinic-2.5.0-SNAPSHOT.jar
